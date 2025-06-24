@@ -161,7 +161,7 @@ function getSessionId() {
 // Send log entry to Google Sheets via Apps Script
 async function sendLogToSheet(logEntry) {
   // IMPORTANT: Replace this with your actual deployed Google Apps Script URL
-  const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzSqJo_ZZrVgnl9QXS4K5BZY1IhjW1xuGDS0fZfMDRhotg78p9qb4rYwvgCo2ex-KQQ/exec';
+  const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyHlnxUnRh6WiinSkCoe5dzCTi43JVv14rF2mtjrRR3F63LKeIcxQQMWK6s6KNzoA-zkg/exec';
 
   // Method 1: Try URL parameters (most reliable)
   try {
