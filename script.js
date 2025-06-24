@@ -88,10 +88,10 @@ async function searchSheet() {
       addLogEntry(searchTerm, fullName, 'VALID');
 
     } else {
-      statusDisplay.textContent = 'NOT A VALID PASS ENTRY';
+      statusDisplay.textContent = 'PASS NOT ISSUED';
       statusDisplay.classList.remove('valid');
       statusDisplay.classList.add('invalid');
-      addLogEntry(searchTerm, 'NOT A VALID PASS ENTRY', 'INVALID');
+      addLogEntry(searchTerm, 'PASS NOT ISSUED', 'INVALID');
     }
   } catch (error) {
     statusDisplay.textContent = `Error fetching data`;
