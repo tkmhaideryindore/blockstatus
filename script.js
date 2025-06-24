@@ -82,8 +82,8 @@ async function searchSheet() {
 
     if (matchingRow) {
       const fullName = matchingRow[1] || 'Name not available';
-      const Remarks = matchingRow[1] || 'Remark is blank';
-      statusDisplay.innerHTML = `${fullName} - <b>${Remarks}</b>`;
+      const remarks = matchingRow[1] || 'Remark is blank';
+      statusDisplay.innerHTML = `${fullName} - <b>${remarks}</b>`;
       statusDisplay.classList.remove('invalid');
       statusDisplay.classList.add('valid');
       addLogEntry(searchTerm, fullName, 'VALID');
